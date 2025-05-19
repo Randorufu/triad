@@ -15,7 +15,8 @@ body {
 
 .TT-tile {
   border: 1px solid black;
-  background: white;
+  background: black;
+  background-image: url("https://randorufu.github.io/triad/CardBG.png");
   height: 5.75em;
   width: 5em;
   margin-left: auto;

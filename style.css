@@ -1,0 +1,43 @@
+body {
+  background: black;
+}
+
+.ttgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  width: 15em;
+  height: 15em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.TT-tile {
+  border: 1px solid black;
+  background: white;
+  height: 5.75em;
+  width: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.material-symbols-outlined {
+  margin-top: 0.65em;
+  font-size: 2.5em;
+}
+
+#shufflebutton {
+  text-decoration: none;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  padding: 0.4em 0.5em 0.4em 0.5em;
+  border-radius: 0.3em;
+  font-size: 1em;
+  display: block;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}

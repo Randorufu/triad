@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Triad</title>
+  <title>Triple Triad</title>
   <meta name="robots" content="noindex">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
@@ -15,18 +15,61 @@
 </head>
 <body>
 
+<div class="ttgrid-container">
+  <h1>Triple Triad</h1>
+<button id="shufflebutton" onclick="shuffleElements()">
 <div class="ttgrid">
-  <div id="Tile1" class="TT-tile"><img class="material-symbols-outlined" src="Lightning.png"></div>
-  <div id="Tile2" class="TT-tile"><img class="material-symbols-outlined" src="Darkness.png"></div>
-  <div id="Tile3" class="TT-tile"><img class="material-symbols-outlined" src="Fire.png"></div>
-  <div id="Tile4" class="TT-tile"><img class="material-symbols-outlined" src="Light.png"></div>
+  <div id="Tile1" class="TT-tile"><img class="material-symbols-outlined" src="https://randorufu.github.io/triad/Lightning.png"></div>
+  <div id="Tile2" class="TT-tile"><img class="material-symbols-outlined" src="https://randorufu.github.io/triad/Darkness.png"></div>
+  <div id="Tile3" class="TT-tile"><img class="material-symbols-outlined" src="https://randorufu.github.io/triad/Fire.png"></div>
+  <div id="Tile4" class="TT-tile"><img class="material-symbols-outlined" src="https://randorufu.github.io/triad/Light.png"></div>
   <div id="Tile5" class="TT-tile"></div>
-  <div id="Tile6" class="TT-tile"><img class="material-symbols-outlined" src="Wind.png"></div>
-  <div id="Tile7" class="TT-tile"><img class="material-symbols-outlined" src="Water.png"></div>
-  <div id="Tile8" class="TT-tile"><img class="material-symbols-outlined" src="Ice.png"></div>
-  <div id="Tile9" class="TT-tile"><img class="material-symbols-outlined" src="Earth.png"></div>
-</div>
-<button id="shufflebutton" onclick="shuffleElements()">Shuffle Elements</button>
+  <div id="Tile6" class="TT-tile"><img class="material-symbols-outlined" src="https://randorufu.github.io/triad/Wind.png"></div>
+  <div id="Tile7" class="TT-tile"><img class="material-symbols-outlined" src="https://randorufu.github.io/triad/Water.png"></div>
+  <div id="Tile8" class="TT-tile"><img class="material-symbols-outlined" src="https://randorufu.github.io/triad/Ice.png"></div>
+  <div id="Tile9" class="TT-tile"><img class="material-symbols-outlined" src="https://randorufu.github.io/triad/Earth.png"></div></button>
+</div><!-- .ttgrid -->
+</div><!-- #ttgrid-container -->
+
+  <div class="ttgrid-container"><h2>Rules</h2></div><!-- #ttgrid-container -->
+<div id="button-container">
+  <button onclick="toggleActiveButton(this)" class="rule-button">Ascension</button>
+  <button onclick="toggleActiveButton(this)"class="rule-button">Descension</button>
+  <button onclick="toggleActiveButton(this)"class="rule-button">Elemental</button>
+  <button onclick="toggleActiveButton(this)"class="rule-button">Fallen Ace</button>
+  <button onclick="toggleActiveButton(this)"class="rule-button">Reverse</button>
+  <button onclick="toggleActiveButton(this)"class="rule-button">Plus</button>
+  <button onclick="toggleActiveButton(this)"class="rule-button">Same</button>
+  <button onclick="toggleActiveButton(this)"class="rule-button">Same Wall</button>
+  <button onclick="toggleActiveButton(this)"class="rule-button">Swap</button>
+  <button onclick="toggleActiveButton(this)"class="rule-button">Chaos</button>
+  <button onclick="addClassToRandomButtons()"class="rule-button roulette">Roulette</button>
+</div><!-- #button-container -->
+
+<div class="rule-container">
+  <h3>Ascension</h3>
+  <p>The number values of each card are increased by one for every card of that type that is in play.</p>
+  <h3>Descension</h3>
+  <p>The number values of each card are decreased by one for every card of that type that is in play.</p>
+  <h3>Elemental</h3>
+  <p>When an elemental card is placed on a corresponding element, each rank goes up a point. When any card is placed on a non-matching element, each rank goes down a point. This does not affect the Same, Plus and Same Wall rules, where the cards' original ranks apply.</p>
+  <h3>Fallen Ace</h3>
+  <p>Aces becomes susceptible to capture by the lowly 1. If the Reverse rule is also in play, a 1 will then become vulnerable to capture by an ace.</p>
+  <h3>Reverse</h3>
+  <p>The conditions for capturing cards are reversed so that smaller numbers are more powerful than larger numbers.</p>
+  <h3>Plus</h3>
+  <p>When one card is placed touching two others and the ranks touching the cards plus the opposing rank equal the same sum, then both cards are captured.</p>
+  <h3>Same</h3>
+  <p>When a card is placed touching two or more other cards, and the touching sides of each card is the same, then the other two cards are flipped.</p>
+  <h3>Same Wall</h3>
+  <p>The edges of the board are counted as ace ranks for the purposes of the Same rule.</p>
+  <h3>Combo</h3>
+  <p>Of the cards captured by the Same, Same Wall or Plus rule, if they are adjacent to another card whose rank is lower, it is captured as well. This is not a separate rule; any time Same or Plus is in effect, Combo is in effect as well.</p>
+  <h3>Swap</h3>
+  <p>One card from your deck is randomly switched with one of your opponent's. The cards are returned to their original owners at the end of the game.</p>
+  <h3>Chaos</h3>
+  <p>The card you play each turn is selected at random from your deck.</p>
+</div><!-- #rule-container -->
 
 </body>
 </html>

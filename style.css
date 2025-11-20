@@ -2,6 +2,15 @@ body {
   background: black;
 }
 
+.ttgrid-container {
+  margin-left: 1em;
+  width: 15em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
 .ttgrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -11,6 +20,8 @@ body {
   height: 15em;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 2em;
+  margin-top: 2em;
 }
 
 .TT-tile {
@@ -32,13 +43,60 @@ body {
 #shufflebutton {
   text-decoration: none;
   background-color: black;
-  color: #74cfff;
+  color: black;
   border: none;
-  border-radius: 0.3em;
-  font-size: 1.2em;
-  display: block;
-  margin-top: 2.3em;
+  border-radius: 0;
+}
+
+h1, h2, h3, p {
+  color: white;
+  font-family: sans-serif;
+  margin: 0.25em;
+}
+
+h3 {
+  margin-top: 0.5em;
+}
+
+#button-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 24em;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-top: 1em;
+  justify-content: center;
+  align-content: center;
+}
+
+.rule-button {
+  width: 6em;
+  font-size: 1em;
+  background-color: MidnightBlue;
+  color: White;
+  border: 0.1em solid black;
+  border-radius: 0.2em;
+  margin: 0;
+  padding-top: 0.3em;
+  padding-bottom: 0.2em;
+  display: block;
+}
+
+.roulette {
+  background-color: Crimson;
+  color: Black;  
+}
+
+.rule-button-active {
+  background-color: MediumSlateBlue;
+  color: White;
+}
+
+.rule-container {
+  margin-left: 1em;
+  width: 24em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
 }
